@@ -639,6 +639,13 @@ font-size:18px;
     align-items:center;
     gap:10px;
     cursor:pointer;
+    color:#333 !important;
+    font-size:16px;
+}
+  .accept input{
+    width:20px;
+    height:20px;
+  }
 }
 
 button#enter{

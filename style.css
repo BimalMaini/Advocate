@@ -663,3 +663,14 @@ button#enter:disabled{
     background:#999;
     cursor:not-allowed;
 }
+#popup label{
+    color:#000 !important;
+}
+
+#popup .accept{
+    color:#000 !important;
+}
+
+#popup input[type="checkbox"]{
+    margin-right:10px;
+}

@@ -660,8 +660,25 @@ All Rights Reserved.
 
 </footer>
 
+<script>
+const check = document.getElementById("agree");
+const btn = document.getElementById("enter");
+
+check.addEventListener("change", function () {
+    btn.disabled = !this.checked;
+});
+
+btn.addEventListener("click", function () {
+    document.getElementById("popup").style.display = "none";
+    localStorage.setItem("disclaimerAccepted", "yes");
+});
+
+if (localStorage.getItem("disclaimerAccepted") === "yes") {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
 <script src="script.js"></script>
 
 </body>
-
 </html>
